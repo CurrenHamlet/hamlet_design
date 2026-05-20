@@ -1,27 +1,29 @@
 @import "tailwindcss";
 
-:root {
-  --background: #faf7f2;
-  --foreground: #171717;
-}
+/* Typography: Bebas Neue for display/h1/h2; Plus Jakarta Sans for h3/body/small */
+/* Accent (#e85d2a): display heading line 2 and primary CTAs only — never body text, never adjacent elements */
 
 @theme {
+  /* Colors */
   --color-bg: #faf7f2;
   --color-heading: #142810;
   --color-text: #5c4a32;
   --color-green: #3a6b20;
   --color-accent: #e85d2a;
-}
+  --color-panel: #c8d4be;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+  /* Type scale */
+  --text-display: 7.5rem;
+  --text-display--line-height: 1;
+  --text-h1: 4rem;
+  --text-h1--line-height: 1.1;
+  --text-h2: 2.5rem;
+  --text-h2--line-height: 1.2;
+  --text-h3: 1.5rem;
+  --text-body: 1.125rem;
+  --text-small: 0.875rem;
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Section spacing — use px-section / py-section for consistent rhythm */
+  --spacing-section: 4rem;
+  --spacing-section-y: 5rem;
 }
