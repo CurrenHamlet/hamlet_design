@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${bebasNeue.variable} ${plusJakartaSans.variable} font-[family-name:var(--font-plus-jakarta-sans)] bg-bg`}
+        className={`${bebasNeue.variable} ${plusJakartaSans.variable} font-(family-name:--font-plus-jakarta-sans) bg-bg`}
       >
         <Navbar />
         {children}
